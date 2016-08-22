@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Places you have been</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>These are some places you have been</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>add a place here:</h2>
+
+          <form id="new-place">
+            <div class="form-group">
+              <label for="new-location">where was it you went?</label>
+              <input type="text" class="form-control" id="new-location">
+            </div>
+            <div class="form-group">
+              <label for="new-landmark">was there a landmark?</label>
+              <input type="text" class="form-control" id="new-landmark">
+            </div>
+            <div class="form-group">
+              <label for="new-time">when was it you went?</label>
+              <input class="form-control" type="date" id="new-time">
+            </div>
+            <div class="form-group">
+              <label for="new-specialevent">was there a special event when you went?</label>
+              <input type="text" class="form-control" id="new-specialevent">
+            </div>
+            <div class="form-group">
+              <label for="new-note">any special notes you want to add?</label>
+              <input type="text" class="form-control" id="new-note">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Location:</h2>
+          <ul id="locations">
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-place">
+            <h2></h2>
+
+            <p>location: <span class="location"></span></p>
+            <p>landmark: <span class="landmark"></span></p>
+            <p>time: <span class="time"></span></p>
+            <p>special event: <span class="specialevent"></span></p>
+            <p>note: <span class="note"></span></p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

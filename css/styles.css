@@ -1,0 +1,12 @@
+#show-place {
+  display: none;
+}
+
+.listlocation {
+  cursor: pointer;
+  color: blue;
+}
+
+.listlocation:hover {
+  text-decoration: underline;
+}
